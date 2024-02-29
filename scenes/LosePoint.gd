@@ -7,3 +7,7 @@ func _on_FallingFish_body_entered(body):
 	if body.get_name() == "Player":
 		get_tree().change_scene(str("res://scenes/" + screenName + ".tscn"))
 
+func _on_FallingSaw_body_entered(body):
+	print(str(body.get_name()))
+	if body.get_name() == "Player":
+		get_tree().change_scene(str("res://scenes/" + screenName + ".tscn"))
