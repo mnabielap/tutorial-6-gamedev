@@ -15,8 +15,12 @@ func _ready():
 #func _process(delta):
 #	pass
 
-export var sceneName: String = "Level1"
 func _on_LoseArea_body_entered(body):
-	print("Kamu terjatuh")
+	var current_scene = get_tree().get_current_scene().get_name()
 	if body.get_name() == "Player":
-		get_tree().change_scene(str("res://scenes/" + sceneName + ".tscn"))
+		Global.lives -=1
+		if (Global.lives == 0):
+			get_tree().change_scene(str("res://Scenes/GameOver.tscn"))
+			Global.lives = 3
+		else:
+			get_tree().change_scene(str("res://Scenes/" + current_scene + ".tscn"))

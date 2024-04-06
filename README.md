@@ -1,3 +1,10 @@
+# TUTORIAL 6 GAME DEVELOPMENT
+Saya menerapkan fitur dibawah ini,
+1. Tombol pada layar game over untuk kembali ke menu utama.
+Pada fitur ini, bisa dilihat pada GameOver.tscn yang me link ke LinkButton.gd untuk kembali ke mainmenu
+2. Fitur Select Stage (yang konon sudah ada button-nya di main menu namun tidak dihiraukan).
+Pada fitur ini, bisa dilihat pada SelectStageMenu.tscn yang me link ke LinkButton.gd untuk select level
+
 # TUTORIAL 4 GAME DEVELOPMENT
 Saya menggunakan get_tree.change scene untuk mengubah level dari 1 ke 2.
 1. Level menggunakan tile map yang berbeda dari level pertama.

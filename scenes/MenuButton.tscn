@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/LinkButton.gd" type="Script" id=1]
+[ext_resource path="res://assets/Fonts/font_2.tres" type="DynamicFont" id=2]
+
+[node name="LinkButton3" type="LinkButton"]
+margin_top = 181.0
+margin_right = 363.0
+margin_bottom = 232.0
+focus_mode = 2
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "STAGE SELECT"
+script = ExtResource( 1 )
+scene_to_load = "Level 1"
+
+[connection signal="pressed" from="." to="." method="_on_LinkButton_pressed"]

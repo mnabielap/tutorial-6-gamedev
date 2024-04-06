@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-export var screenName: String = "LoseScreen"
+export var screenName: String = "GameOver"
 
 func _on_FallingFish_body_entered(body):
 	print(str(body.get_name()))
